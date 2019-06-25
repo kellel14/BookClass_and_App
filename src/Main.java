@@ -4,30 +4,32 @@ import java.util.Scanner;
 public class Main {
     public static void main (String [] args){
 
-        ArrayList<Book> books = new ArrayList<>();
+        Book books1 = new Book();
 
-        String addBooks = "";
+//        String addBooks = "";
 
-        do{
+//        do{
             Book theBook = new Book();
 
             Scanner userInput = new Scanner(System.in);
 
-            System.out.println("Enter your book title.");
-            String bookTitle = userInput.nextLine();
-            theBook.setTitle(bookTitle);
+//            System.out.println("Enter your book title.");
+//            String bookTitle = userInput.nextLine();
+            theBook.setTitle("BootCamp");
 
-            System.out.println("Enter the author of the book.");
-            String bookAuthor = userInput.nextLine();
-            theBook.setAuthor(bookAuthor);
+//            System.out.println("Enter the author of the book.");
+//            String bookAuthor = userInput.nextLine();
+            theBook.setAuthor("Kellz F.");
 
-            System.out.println("Add a brief description of the book.");
-            String bookDescription = userInput.nextLine();
-            theBook.setDescription(bookDescription);
+//            System.out.println("Add a brief description of the book.");
+//            String bookDescription = userInput.nextLine();
+            theBook.setDescription("Tales of an upcoming developer");
 
-            System.out.println("Add the price of the book.");
-            double bookPrice = userInput.nextDouble();
-            theBook.setPrice(bookPrice);
+//            System.out.println("Add the price of the book.");
+//            double bookPrice = userInput.nextDouble();
+            theBook.setPrice(19.99);
+
+            theBook.setisInStock("yes");
 
 
             System.out.println(theBook.getDisplayText());
@@ -37,10 +39,10 @@ public class Main {
 //            System.out.println("Do you want to add another book?" + "\n(yes/no)");
 //            addBooks = userInput.nextLine();
 //
-            books.add(theBook);
+//            books.add(theBook);
 
 
-        }while(addBooks.equalsIgnoreCase("yes"));
+//        }while(addBooks.equalsIgnoreCase("yes"));
 
 //        for (Book item:books){
 //            System.out.println(item.getTitle()+ "\n" +item.getAuthor()+ "\n"+

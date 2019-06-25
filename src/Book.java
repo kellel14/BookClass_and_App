@@ -1,8 +1,9 @@
 public class Book {
 
 
-    private String title, author, description;
+    private String title, author, description, isInStock;
     private double price;
+//    private boolean isInStock = false;
 //you can also auto generate constructors from class
     //default constructor; helps create a object
     public Book(){
@@ -14,11 +15,9 @@ public class Book {
         this.author = author;
         this.description = description;
         this.price = price;
+        this.isInStock = isInStock;
     }
-    public String getDisplayText() {
-        return  title + "\nAuthor: " + author + "\nDescription:\n" + description +
-                "\nPrice: $" + price;
-    }
+
 
     //create getters method
     public String getTitle(){
@@ -32,6 +31,10 @@ public class Book {
     public String getDescription(){
         return description;
     }
+    public String setisInStock(){
+        return isInStock;
+    }
+
 
     public double getPrice(){
         return price;
@@ -52,6 +55,15 @@ public class Book {
 
     public void setPrice(double price){
         this.price = price;
+    }
+
+    public void setisInStock(String isInStock){
+        this.isInStock = isInStock;
+    }
+    //displaying message
+    public String getDisplayText() {
+        return  title + "\nAuthor: " + author + "\nDescription:\n" + description +
+                "\nPrice: $" + price + "\nIn Stock: " + isInStock;
     }
 
 
