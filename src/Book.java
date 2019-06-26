@@ -1,16 +1,17 @@
 public class Book {
 
 
-    private String title, author, description, isInStock;
+    private String title, author, description;
     private double price;
-//    private boolean isInStock = false;
+    private boolean isInStock;
 //you can also auto generate constructors from class
     //default constructor; helps create a object
     public Book(){
     }
 
     // overloaded constructor; everything on same line
-    public Book(String title, String author, String description, double price) {
+    public Book(String title, String author, String description, double price,
+                boolean isInStock) {
         this.title = title;
         this.author = author;
         this.description = description;
@@ -19,7 +20,7 @@ public class Book {
     }
 
 
-    //create getters method
+    //create getters method for private variables
     public String getTitle(){
         return title;
     }
@@ -29,10 +30,10 @@ public class Book {
     }
 
     public String getDescription(){
-        return description;
+        return this.description;
     }
-    public String setisInStock(){
-        return isInStock;
+    public boolean setisInStock(){
+        return this.isInStock;
     }
 
 
@@ -40,7 +41,7 @@ public class Book {
         return price;
     }
 
-    //create setters method
+    //create setters method for private variables
     public void setTitle(String title) {
         this.title = title;
     }
@@ -57,7 +58,7 @@ public class Book {
         this.price = price;
     }
 
-    public void setisInStock(String isInStock){
+    public void setisInStock(boolean isInStock){
         this.isInStock = isInStock;
     }
     //displaying message
