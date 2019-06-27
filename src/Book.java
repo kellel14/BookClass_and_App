@@ -11,12 +11,13 @@ public class Book {
 
     // overloaded constructor; everything on same line
     public Book(String title, String author, String description, double price,
-                boolean isInStock) {
+               boolean isInStock) {
         this.title = title;
         this.author = author;
         this.description = description;
         this.price = price;
         this.isInStock = isInStock;
+//        this.priceTotal = priceTotal;
     }
 
 
@@ -30,16 +31,20 @@ public class Book {
     }
 
     public String getDescription(){
-        return this.description;
+        return description;
     }
     public boolean setisInStock(){
-        return this.isInStock;
+        return isInStock;
     }
 
 
     public double getPrice(){
         return price;
     }
+
+//    public double priceTotal(){
+//        return priceTotal;
+//    }
 
     //create setters method for private variables
     public void setTitle(String title) {
@@ -62,15 +67,23 @@ public class Book {
         this.isInStock = isInStock;
     }
     //displaying message
-    public String getDisplayText() {
-        return  title + "\nAuthor: " + author + "\nDescription:\n" + description +
-                "\nPrice: $" + price + "\nIn Stock: " + isInStock;
+    public void getDisplayText() {
+//        return  title + "\nAuthor: " + author + "\nDescription:\n" + description +
+//                "\nPrice: $" + price + "\nIn Stock: " + isInStock;
+
+        System.out.println("Author: " + this.author + " " + "Title : " + this.title + " " + " Description : "
+                + this.description + " " + "Price : " + this.price + " " + "IsinStock: " + this.isInStock);
     }
 
 
-
-
-
+//    //calculate total price of all books
+//    public void setpriceTotal (double priceTotal){
+//        this.priceTotal = price++ ;
+//    }
+//    // display total price
+//    public double DisplayTotalPrice(){
+//        return priceTotal;
+//    }
 
 
 
