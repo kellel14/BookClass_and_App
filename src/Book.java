@@ -71,8 +71,8 @@ public class Book {
 //        return  title + "\nAuthor: " + author + "\nDescription:\n" + description +
 //                "\nPrice: $" + price + "\nIn Stock: " + isInStock;
 
-        System.out.println("Author: " + this.author + " " + "Title : " + this.title + " " + " Description : "
-                + this.description + " " + "Price : " + this.price + " " + "IsinStock: " + this.isInStock);
+        System.out.println("Author: " + this.author + "\n" + "Title: " + this.title + "\n" + "Description: "
+                + this.description + "\n" + "Price: " + this.price + "\n" + "IsinStock: " + this.isInStock);
     }
 
 
